@@ -1,8 +1,25 @@
 // scripted
-node {
-	
+
+
+pipeline {
+	agent any
+
+stages{
+	stage{
+		steps{	
 		echo "Build"
-		echo "Test"
-		echo "Integration Test"
+		}
+	}
+	stage{
+		steps{
+			echo "Test"
+		}
+	}
+	stage{
+		steps{
+			echo "Integration Test"
+		}
+	}		
 	}
 
+} 
